@@ -11,12 +11,29 @@ front-end to clang++ for legacy reasons.
 
 ## Solution
 
+### Solution 1
+
+1.  command in the Terminal
+
+    ```bash
+    wget https://github.com/ty-yqs/macOS-stdc.h/raw/refs/heads/main/install.sh
+    sudo bash ./install.sh
+    ```
+
+2.  You can now write and compile successfully:
+
+    ``` cpp
+    #include <bits/stdc++.h>
+    ```
+
+### Solution 2
+
 1.  You need to create a directory ‘bits’ under the folder
     `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include`. This can be done by running the following
     command in the Terminal:
 
     ``` bash
-    mkdir /usr/local/include/bits
+    mkdir /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/bits
     ```
 
 2.  You need to copy the contents of the
@@ -27,7 +44,7 @@ front-end to clang++ for legacy reasons.
     curl https://raw.githubusercontent.com/ty-yqs/macOS-stdc.h/refs/heads/main/bits/stdc%2B%2B.h > /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/bits/stdc++.h
     ```
 
-3.  You can now write and conpile successfully:
+3.  You can now write and compile successfully:
 
     ``` cpp
     #include <bits/stdc++.h>
