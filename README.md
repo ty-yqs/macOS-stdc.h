@@ -13,10 +13,11 @@ front-end to clang++ for legacy reasons.
 
 ### Solution 1
 
-1.  command in the Terminal
+1.  download [`install.sh`](./install.sh) .
+
+3.  command in the Terminal
 
     ```bash
-    wget https://github.com/ty-yqs/macOS-stdc.h/raw/refs/heads/main/install.sh
     sudo bash ./install.sh
     ```
 
