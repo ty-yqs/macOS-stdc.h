@@ -15,7 +15,7 @@ front-end to clang++ for legacy reasons.
 
 1.  download [`install.sh`](./install.sh) .
 
-3.  command in the Terminal
+3.  Running the following command in the Terminal:
 
     ```bash
     sudo bash ./install.sh
